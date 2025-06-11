@@ -1,0 +1,113 @@
+.commandeForm-container {
+  background: #f8f9fa;
+  padding: 20px;
+}
+
+.client-selection, .categorie-selection, .commande-details {
+  background: #fff;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.categorie-selection .list-group-item, .client-selection .list-group-item, .commande-details .list-group-item {
+  margin-right: 5px;
+  cursor: pointer;
+}
+
+.categorie-selection .list-group-item.active, .client-selection .list-group-item.active {
+  background-color: #007bff;
+  border-color: #007bff;
+  color: #fff;
+}
+
+.produit-card {
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.produit-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.produit-card .action-icons {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+.produit-card .btn-icon {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.produit-card .btn-icon:hover {
+  color: #007bff;
+}
+
+.commande-details {
+  position: sticky;
+  top: 0;
+  height: calc(100vh - 20px);
+  overflow-y: auto;
+  border-left: 2px solid #eee;
+}
+
+@media (max-width: 767px) {
+  .commande-details {
+    position: relative;
+    top: auto;
+    height: auto;
+    border-left: none;
+    border-top: 2px solid #eee;
+  }
+}
+
+
+
+/* Quantité selector styles */
+.quantite-selector .btn-outline-secondary {
+  background: #f0f0f0;
+  color: #333;
+}
+
+.quantite-selector .btn-outline-secondary:hover {
+  background: #e0e0e0;
+}
+
+.quantite-selector .form-control {
+  text-align: center;
+  font-weight: bold;
+  background: white;
+  pointer-events: none;
+}
+
+/* Styles pour la barre de défilement personnalisée */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Sticky footer dans le détails de commande */
+.commande-details-footer {
+  position: sticky;
+  bottom: 0;
+  background: white;
+  padding: 10px 0;
+  border-top: 1px solid #eee;
+}
